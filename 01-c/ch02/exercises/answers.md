@@ -70,3 +70,16 @@ Insert spaces between the tokens in Exercise 8 to make the statement easier to r
 ```c
 answer = (3 * q - p * p) / 3;
 ```
+
+## Exercise 10
+In the `dweight.c` program, which spaces are essential?
+
+A space is essential when it separates two tokens that would otherwise merge into one (two words or numbers next to each other):
+
+- `int main` → `intmain` would be a new identifier
+- `int height` (and the rest of that declaration line)
+- `return 0` → `return0` would be an identifier
+
+Not essential: the space in `#include <stdio.h>` (`#include<stdio.h>` also compiles).
+
+Spaces inside string literals can't be removed either, because they are part of the printed text.
