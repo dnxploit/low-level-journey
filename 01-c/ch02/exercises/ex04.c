@@ -1,4 +1,5 @@
 /* Chapter 2, Exercise 4: int and float declarations without initialization */
+
 #include <stdio.h>
 
 int main(void)
