@@ -1,4 +1,4 @@
-   /* Chapter 2, Programming Project 7: pays an amount with $20, $10, $5 and $1 bills */
+/* Chapter 2, Programming Project 7: pays an amount with $20, $10, $5 and $1 bills */
 
 #include <stdio.h>
 

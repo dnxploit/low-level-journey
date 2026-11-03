@@ -14,9 +14,9 @@ my own Windows driver.
 |---|---|---|---|
 | 01 | C from scratch | *C Programming: A Modern Approach* (K. N. King) | 🔨 In progress |
 | 02 | x86-64 assembly & debuggers | OpenSecurityTraining2 (Arch1001, Dbg1011) | ⏳ Planned |
-| 03 | Operating systems | *OSTEP* | ⏳ Planned |
+| 03 | OS & x86-64 internals | *OSTEP* + OST2 Arch2001 | ⏳ Planned |
 | 04 | Reverse engineering | OST2 RE3011 + crackmes.one | ⏳ Planned |
-| 05 | Binary exploitation | pwn.college | ⏳ Planned |
+| 05 | Binary exploitation | pwn.college + Corelan | ⏳ Planned |
 | 06 | Windows internals & kernel | *Windows Internals* + *Windows Kernel Programming* | ⏳ Planned |
 | 07 | Specialization | OSED | ⏳ Planned |
 

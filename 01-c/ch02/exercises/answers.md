@@ -1,5 +1,5 @@
 ## Exercise 1
-Code ex01.c
+Code: ex01.c
 
 Do you get a warning message from the compiler?
 No warning. Since C99, reaching the end of main returns 0 implicitly.
@@ -28,16 +28,16 @@ available for its completion.
 Code: ex04.c
 
 Is there any pattern to the values?
-In my test all values were 0, but doind some research i found that is not a reliable pattern.
+In my test all values were 0, but doing some research I found that is not a reliable pattern.
 Uninitialized variables have indeterminate values: they contain whatever was in that memory before. My program is so small that the memory was still clean, so everything was 0.
 
 ## Exercise 5
 Which identifiers are not legal?
 
-- **(a) `100_bottles` -> not legal** (an identifier can't start with a digit)
-- (b) `_100_bottles` -> legal
-- (c) `one__hundred__bottles` -> legal
-- (d) `bottles_by_the_hundred_` -> legal
+- **(a) `100_bottles` → not legal** (an identifier can't start with a digit)
+- (b) `_100_bottles` → legal
+- (c) `one__hundred__bottles` → legal
+- (d) `bottles_by_the_hundred_` → legal
 
 ## Exercise 6
 Why is it not a good idea to use more than one adjacent underscore?
@@ -47,11 +47,11 @@ It makes the identifier hard to read and easy to mistype: it is difficult to see
 ## Exercise 7
 Which of the following are keywords in C?
 
-- **(a) `for`** -> keyword
-- (b) `If` -> not a keyword (C is case-sensitive; the keyword is `if`)
-- (c) `main` -> not a keyword, it is the name of a function
-- (d) `printf` -> not a keyword, it is a standard library function
-- **(e) `while`** -> keyword
+- **(a) `for`** → keyword
+- (b) `If` → not a keyword (C is case-sensitive; the keyword is `if`)
+- (c) `main` → not a keyword, it is the name of a function
+- (d) `printf` → not a keyword, it is a standard library function
+- **(e) `while`** → keyword
 
 ## Exercise 8
 How many tokens are there in the following statement?
