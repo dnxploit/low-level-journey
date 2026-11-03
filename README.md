@@ -12,7 +12,7 @@ my own Windows driver.
 
 | Phase | Topic | Main resource | Status |
 |---|---|---|---|
-| 01 | C from scratch | *C Programming: A Modern Approach* (K. N. King) | ⏳ Planned |
+| 01 | C from scratch | *C Programming: A Modern Approach* (K. N. King) | 🔨 In progress |
 | 02 | x86-64 assembly & debuggers | OpenSecurityTraining2 (Arch1001, Dbg1011) | ⏳ Planned |
 | 03 | Operating systems | *OSTEP* | ⏳ Planned |
 | 04 | Reverse engineering | OST2 RE3011 + crackmes.one | ⏳ Planned |
