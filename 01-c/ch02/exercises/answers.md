@@ -64,3 +64,9 @@ answer=(3*q-p*p)/3;
 `answer` `=` `(` `3` `*` `q` `-` `p` `*` `p` `)` `/` `3` `;`
 
 Spaces are not tokens, they only separate them.
+
+## Exercise 9
+Insert spaces between the tokens in Exercise 8 to make the statement easier to read.
+```c
+answer = (3 * q - p * p) / 3;
+```
