@@ -69,3 +69,20 @@ Are the two `scanf` format strings equivalent?
 - i = 45 (`%d` stops at the `.`)
 - y = 0.6 (`%f` reads `.6`)
 - `789` is not read: it stays in the input buffer.
+
+## Exercise 6
+Modify `addfrac.c` to allow spaces before and after each `/`.
+
+Original lines:
+```c
+scanf("%d/%d", &num1, &denom1);
+scanf("%d/%d", &num2, &denom2);
+```
+
+Modified lines:
+```c
+scanf("%d /%d", &num1, &denom1);
+scanf("%d /%d", &num2, &denom2);
+```
+
+Why it works: a space in the format string matches zero or more white-space characters, so spaces before the `/` are allowed. A space after the `/` is not needed, because `%d` already skips leading white-space.
