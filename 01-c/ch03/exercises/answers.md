@@ -62,3 +62,10 @@ Are the two `scanf` format strings equivalent?
 - j = 5
 - `6` is not read: it stays in the input buffer for the next `scanf` call.
 
+## Exercise 5
+`scanf("%f%d%f", &x, &i, &y);` with input `12.3 45.6 789`
+
+- x = 12.3
+- i = 45 (`%d` stops at the `.`)
+- y = 0.6 (`%f` reads `.6`)
+- `789` is not read: it stays in the input buffer.
