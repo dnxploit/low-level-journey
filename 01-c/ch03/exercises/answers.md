@@ -53,3 +53,12 @@ Are the two `scanf` format strings equivalent?
 (d) `"%f,%f"` vs `"%f, %f"`
 - Equivalent? Yes
 - Why: `%f` already skips leading white-space, so the space after the comma changes nothing. In both, the comma must come right after the first number.
+
+## Exercise 4
+`scanf("%d%f%d", &i, &x, &j);` with input `10.3 5 6`
+
+- i = 10 (`%d` stops at the `.`)
+- x = 0.3 (`%f` reads `.3`)
+- j = 5
+- `6` is not read: it stays in the input buffer for the next `scanf` call.
+
