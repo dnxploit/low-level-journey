@@ -194,3 +194,11 @@ Supply parentheses to show how a C compiler interprets each expression.
 
 (d) `a * - b / c - d`
 → `(((a * (-b)) / c) - d)`
+
+## Exercise 15
+Values of `i` and `j` after each statement (i = 1 and j = 2 initially):
+
+- (a) `i += j;` → i = 3, j = 2
+- (b) `i--;` → i = 0, j = 2
+- (c) `i * j / i;` → i = 1, j = 2
+- (d) `i % ++j;` → i = 1, j = 3
