@@ -32,3 +32,18 @@ Does `(-i) / j` always have the same value as `-(i / j)`?
 - **C99 and later:** yes. Division always truncates toward zero, so
   both expressions give -3.
 
+## Exercise 3
+Value of each expression in C89 (all possible values):
+
+- (a) `8 / 5` → 1
+- (b) `-8 / 5` → -2 or -1
+- (c) `8 / -5` → -2 or -1
+- (d) `-8 / -5` → 1 or 2
+
+## Exercise 4
+Same expressions in C99:
+
+- (a) `8 / 5` → 1
+- (b) `-8 / 5` → -1
+- (c) `8 / -5` → -1
+- (d) `-8 / -5` → 1
