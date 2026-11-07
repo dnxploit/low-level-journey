@@ -47,3 +47,21 @@ Same expressions in C99:
 - (b) `-8 / 5` → -1
 - (c) `8 / -5` → -1
 - (d) `-8 / -5` → 1
+
+## Exercise 5
+Value of each expression in C89 (all possible values):
+
+- (a) `8 % 5` → 3
+- (b) `-8 % 5` → -3 or 2
+- (c) `8 % -5` → 3 or -2
+- (d) `-8 % -5` → -3 or 2
+
+## Exercise 6
+Same expressions in C99:
+
+- (a) `8 % 5` → 3
+- (b) `-8 % 5` → -3
+- (c) `8 % -5` → 3
+- (d) `-8 % -5` → -3
+
+In C99 the remainder always has the same sign as the left operand, because `a % b == a - (a / b) * b` and division truncates toward zero.
