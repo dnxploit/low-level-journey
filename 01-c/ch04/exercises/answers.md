@@ -173,3 +173,9 @@ Show the output of each program fragment.
 ```
 6 15
 ```
+
+## Exercise 13
+Which one is exactly the same as `(i += 1)`: `++i` or `i++`?
+
+Answer: `++i`.
+Why: both increment `i` and the value of the whole expression is the new value of `i`. `i++` also increments `i`, but its value is the old value of `i`.
