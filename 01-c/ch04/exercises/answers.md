@@ -24,3 +24,11 @@ Show the output produced by each program fragment.
 ```
 0
 ```
+
+## Exercise 2
+Does `(-i) / j` always have the same value as `-(i / j)`?
+
+- **C89:** not always. When an operand is negative, the compiler can round the result either toward zero or down, so the result depends on the implementation. Example with i = 7, j = 2: `-(i / j)` is -3, but `(-i) / j` could be -3 or -4.
+- **C99 and later:** yes. Division always truncates toward zero, so
+  both expressions give -3.
+
