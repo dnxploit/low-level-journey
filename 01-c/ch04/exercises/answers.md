@@ -179,3 +179,18 @@ Which one is exactly the same as `(i += 1)`: `++i` or `i++`?
 
 Answer: `++i`.
 Why: both increment `i` and the value of the whole expression is the new value of `i`. `i++` also increments `i`, but its value is the old value of `i`.
+
+## Exercise 14
+Supply parentheses to show how a C compiler interprets each expression.
+
+(a) `a * b - c * d + e`
+→ `(((a * b) - (c * d)) + e)`
+
+(b) `a / b % c / d`
+→ `(((a / b) % c) / d)`
+
+(c) `- a - b + c - + d`
+→ `((((-a) - b) + c) - (+d))`
+
+(d) `a * - b / c - d`
+→ `(((a * (-b)) / c) - d)`
