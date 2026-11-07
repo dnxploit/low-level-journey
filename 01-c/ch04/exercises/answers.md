@@ -65,3 +65,13 @@ Same expressions in C99:
 - (d) `-8 % -5` → -3
 
 In C99 the remainder always has the same sign as the left operand, because `a % b == a - (a / b) * b` and division truncates toward zero.
+
+## Exercise 7
+Why doesn't the simplified algorithm work?
+
+Both methods give the same result except when the total is a multiple of 10. For example, with total = 30:
+
+- Original: 9 - ((30 - 1) % 10) = 9 - 9 = 0
+- Simplified: 10 - (30 % 10) = 10 - 0 = 10
+
+10 is not a valid check digit (it must be a single digit, 0-9), so the simplified version fails in that case.
