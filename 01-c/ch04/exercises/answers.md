@@ -127,3 +127,26 @@ Show the output of each program fragment.
 6 9
 ```
 Note: this is undefined behavior, because `j` is modified twice in the same expression. Most compilers print `6 9`, but C doesn't guarantee it (gcc -Wall warns about it).
+
+## Exercise 11
+Show the output of each program fragment.
+
+(a) `i = 1; printf("%d ", i++ - 1); printf("%d", i);`
+```
+0 2
+```
+
+(b) `i = 10; j = 5; printf("%d ", i++ - ++j); printf("%d %d", i, j);`
+```
+4 11 6
+```
+
+(c) `i = 7; j = 8; printf("%d ", i++ - --j); printf("%d %d", i, j);`
+```
+0 8 7
+```
+
+(d) `i = 3; j = 4; k = 5; printf("%d ", i++ - j++ + --k); printf("%d %d %d", i, j, k);`
+```
+3 4 5 4
+```
