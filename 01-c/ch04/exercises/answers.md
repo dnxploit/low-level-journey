@@ -103,3 +103,27 @@ Show the output of each program fragment.
 ```
 0 0 0
 ```
+
+## Exercise 10
+Show the output of each program fragment.
+
+(a) `i = 6; j = i += i; printf("%d %d", i, j);`
+```
+12 12
+```
+
+(b) `i = 5; j = (i -= 2) + 1; printf("%d %d", i, j);`
+```
+3 4
+```
+
+(c) `i = 7; j = 6 + (i = 2.5); printf("%d %d", i, j);`
+```
+2 8
+```
+
+(d) `i = 2; j = 8; j = (i = 6) + (j = 3); printf("%d %d", i, j);`
+```
+6 9
+```
+Note: this is undefined behavior, because `j` is modified twice in the same expression. Most compilers print `6 9`, but C doesn't guarantee it (gcc -Wall warns about it).
