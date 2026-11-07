@@ -150,3 +150,26 @@ Show the output of each program fragment.
 ```
 3 4 5 4
 ```
+
+## Exercise 12
+Show the output of each program fragment.
+
+(a) `i = 5; j = ++i * 3 - 2; printf("%d %d", i, j);`
+```
+6 16
+```
+
+(b) `i = 5; j = 3 - 2 * i++; printf("%d %d", i, j);`
+```
+6 -7
+```
+
+(c) `i = 7; j = 3 * i-- + 2; printf("%d %d", i, j);`
+```
+6 23
+```
+
+(d) `i = 7; j = 3 + --i * 2; printf("%d %d", i, j);`
+```
+6 15
+```
