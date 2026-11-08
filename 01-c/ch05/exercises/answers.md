@@ -127,3 +127,6 @@ What output does the `switch` fragment produce (i = 1)?
 onetwo
 ```
 Why: `i % 3` is 1, so execution starts at `case 1`. There is no `break`, so it falls through and also executes `case 2`.
+
+## Exercise 11
+Code: ex11.c
