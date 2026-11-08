@@ -70,3 +70,16 @@ Show the output of each program fragment (short-circuit evaluation).
 ```
 1 2 1 1
 ```
+
+## Exercise 4
+Write a single expression whose value is -1, 0 or +1 depending on
+whether `i` is less than, equal to, or greater than `j`.
+
+```c
+(i > j) - (i < j)
+```
+
+Why it works: each comparison is 1 if true and 0 if false.
+- If `i` is less than `j`: 0 - 1 = -1
+- If `i` is equal to `j`: 0 - 0 = 0
+- If `i` is greater than `j`: 1 - 0 = 1
