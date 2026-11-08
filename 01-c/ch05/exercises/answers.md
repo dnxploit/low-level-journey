@@ -83,3 +83,24 @@ Why it works: each comparison is 1 if true and 0 if false.
 - If `i` is less than `j`: 0 - 1 = -1
 - If `i` is equal to `j`: 0 - 0 = 0
 - If `i` is greater than `j`: 1 - 0 = 1
+
+## Exercise 5
+Is `if (n >= 1 <= 10)` legal? If so, what does it do when `n` is 0?
+
+- Legal? Yes, it compiles, but it doesn't do what it seems to do.
+- How it's evaluated: first `n >= 1` is evaluated, which gives 0 or 1. Then that result is compared with 10. Since 0 and 1 are both less than or equal to 10, the condition is always true.
+- When n = 0: `0 >= 1` is 0, and `0 <= 10` is 1, so the message "n is between 1 and 10" is printed even though 0 is not between 1 and 10.
+
+## Exercise 6
+Is `if (n == 1-10)` legal? If so, what does it do when `n` is 5?
+
+- Legal? Yes
+- How it's evaluated: first `1-10` is evaluated, which gives -9, then compares if n is equal to -9.
+- When n = 5: 5 is not equal to -9, so the condition is false (0) and nothing is printed.
+
+## Exercise 7
+What does `printf("%d\n", i >= 0 ? i : -i);` print?
+
+- When i = 17: 17
+- When i = -17: 17
+- What the expression does: first `i >= 0` is evaluated. If it's true, the value of the expression is `i`; if it's false, it's `-i`. With i = -17, `-i` is -(-17) = 17. So the expression always prints the absolute value of `i`.
