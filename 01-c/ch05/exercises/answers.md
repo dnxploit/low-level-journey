@@ -104,3 +104,12 @@ What does `printf("%d\n", i >= 0 ? i : -i);` print?
 - When i = 17: 17
 - When i = -17: 17
 - What the expression does: first `i >= 0` is evaluated. If it's true, the value of the expression is `i`; if it's false, it's `-i`. With i = -17, `-i` is -(-17) = 17. So the expression always prints the absolute value of `i`.
+
+## Exercise 8
+Simplify the `if` statement as much as possible.
+
+```c
+teenager = age >= 13 && age <= 19;
+```
+
+Why it works: the condition is already true (1) or false (0), so it can be assigned directly to `teenager`. Also, the original `else if (age < 13)` is redundant: if `age >= 13` is false, `age` must be less than 13.
