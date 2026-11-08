@@ -113,3 +113,17 @@ teenager = age >= 13 && age <= 19;
 ```
 
 Why it works: the condition is already true (1) or false (0), so it can be assigned directly to `teenager`. Also, the original `else if (age < 13)` is redundant: if `age >= 13` is false, `age` must be less than 13.
+
+## Exercise 9
+Are the two `if` statements equivalent? If not, why not?
+
+- Equivalent? Yes.
+- Why: both give the same letter for every score. The first one checks from the highest grade down (`>= 90`, `>= 80`...) and the second one from the lowest up (`< 60`, `< 70`...). The boundaries match: for example, a score of 60 is a D in both, because `60 >= 60` is true and `60 < 60` is false.
+
+## Exercise 10
+What output does the `switch` fragment produce (i = 1)?
+
+```
+onetwo
+```
+Why: `i % 3` is 1, so execution starts at `case 1`. There is no `break`, so it falls through and also executes `case 2`.
